@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册页</title>
+		<style>
+			body{
+				background-image: url(../img/log_background.jpg);
+				background-repeat:no-repeat;
+				width: 100%;
+				height: 100%;
+				background-size: cover;/*背景图基于容器大小收缩*/
+				background-attachment: fixed; /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+			}
+			#logon_main{
+				background-color: rgba(255, 255, 255, 0.95);
+				width: 420px;
+				height: 360px;
+				border: 1px solid #000000;
+				border-radius: 6px;
+				padding: 10px;
+				margin-top: 15%;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+			#logon_main .logon-header img{
+				width: 100px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+			#logon_main form .logon-input{
+				margin-top: 12px;
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				display: inline-block;
+			}
+			#logon_main form .logon-input input{
+				width: 340px;
+				height: 32px;
+				margin-left: 18px;
+				border: 1px solid #dcdcdc;
+				border-radius: 4px;
+				padding-left: 42px;
+			}
+			#logon_main form .logon-input .icon{
+				width: 24px;
+				height: 24px;
+				margin: 6px 4px 6px 24px;
+				display: inline-block;
+				position: absolute;
+				border-right: 1px solid #dcdcdc;
+			}
+			
+			#logon_main form .logon-input:valid{
+				border: 1px solid #008000;
+			}
+			input:required{
+				border:1px solid #FF7D0A;
+			}
+			
+			.logon-button-box{
+				margin-top: 12px;
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				display: inline-block;
+			}
+			
+			#logon-button{
+				background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+				color: #ffffff;
+				font-size: 16px;
+				width: 386px;
+				height: 40px;
+				margin-left: 18px;
+				border: 1px solid;
+				border-radius: 4px;
+			}
+			.login-box{
+				margin-top: 20px;
+				text-align: center;
+			}
+			
+			.login-box a{
+				margin: 30px;
+				color: #000000;
+				font-size: 13px;
+				text-decoration: none;
+			}
+			
+			.login-box a:hover{
+				color:#ff7d0a;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="logon_main">
+			<div class="logon-header">
+				<img src="../img/旅行.svg" />
+			</div>
+			<form>
+				<div class="logon-input">
+					<img src="../img/登录.svg" class="icon" />
+					<input required="required" type="text" placeholder="请输入用户名"/>
+				</div>
+				<div class="logon-input">
+					<img src="../img/密码.svg" class="icon" />
+					<input required="required" type="password" placeholder="请输入密码"/>
+				</div>
+				<div class="logon-input">
+					<img src="../img/确认密码.svg" class="icon"/>
+					<input required="required" type="password" placeholder="请再次输入密码" />
+				</div>
+				<div class="logon-button-box">
+					<input id="logon-button" type="submit" value="注册"/>
+				</div>
+			</form>
+			<div class="login-box">
+				<a href="login.html">已有账号？直接登录</a>
+			</div>
+		</div>
+		
+	</body>
+</html>
