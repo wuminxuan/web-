@@ -1,0 +1,33 @@
+.breadNav{
+				background-color: #6A6765;
+				margin: 0;
+				padding: 0;
+			}
+.breadcrumb ul {
+    display: flex;
+	list-style-type: none;
+}
+
+.breadcrumb li::before {
+    content: "→";
+}
+
+.breadcrumb li:first-child::before {
+    content: "";
+}
+
+.breadcrumb{
+	overflow: hidden;
+	background-color: #333;
+}
+
+.breadcrumb a{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 0px 16px;
+	text-decoration: none;
+}
+
+

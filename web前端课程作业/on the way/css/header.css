@@ -1,0 +1,41 @@
+.header{
+		display: grid;
+		grid-template-columns:20px 30px 50px auto 50px 50px 50px;
+		grid-template-rows: 40px;
+		grid-template-areas: ". logo . nav login logon .";
+		background-color: #FF7D0A;
+		padding: 0px;
+	}
+.header #login{
+		margin-top: 10px;
+		grid-area: login;
+	}
+.header #logon{
+		margin-top: 10px;
+		grid-area: logon;
+	}
+.header #logo{
+		margin-top: 0px;
+		grid-area: logo;
+	}
+.header #nav_to_travels{
+		margin-top: 10px;
+		grid-area: nav;
+	}
+.header #logo img{
+		width: 50px;
+		height: 40px;
+	}
+.header a{
+		width: 50px;
+		color: #000000;
+		font-size: 18px;
+		text-decoration: none;
+		font-family: STSong;
+	}
+.header a:hover{
+		font-weight: bolder;
+}
+.header #nav_to_home{
+	grid-area: nav;
+}
